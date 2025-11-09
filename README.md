@@ -45,16 +45,3 @@ The model efficiently generates **novel, valid, and drug-like molecules** on **c
 - **Interface:** Gradio / Flask
 - **Deployment:** Google Colab, Hugging Face Spaces, Docker
 
----
-
-## 📂 Repository Structure
-ORGAN-DPP/
-├── train_organ_dpp.py      # Main Colab-compatible training script
-├── vocab.txt                           # Token vocabulary for SMILES representation
-├── train.txt                           # Training data (SMILES)
-├── test.txt                            # Test data (SMILES)
-├── requirements.txt                    # Python dependencies
-├── README.md                           # This documentation
-├── LICENSE                             # License file
-└──FINAL_molecule.docx                  # Project documentation
-
