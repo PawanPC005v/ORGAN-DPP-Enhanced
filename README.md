@@ -35,6 +35,8 @@ The model efficiently generates **novel, valid, and drug-like molecules** on **c
 | **Curriculum Scheduler** | Manages 3-stage adaptive training |
 | **Visualizer** | RDKit + Matplotlib for molecule rendering and metrics |
 
+-----
+
 ## Dataset Description
 
 | File | Description |
