@@ -26,7 +26,6 @@ The model efficiently generates **novel, valid, and drug-like molecules** on **c
 ---
 
 ## System Architecture
-![Architecture Diagram](docs/architecture.png)
 
 | Module | Description |
 |--------|--------------|
@@ -35,6 +34,15 @@ The model efficiently generates **novel, valid, and drug-like molecules** on **c
 | **Feature-based DPP** | Ensures structural diversity efficiently |
 | **Curriculum Scheduler** | Manages 3-stage adaptive training |
 | **Visualizer** | RDKit + Matplotlib for molecule rendering and metrics |
+
+## Dataset Description
+
+| File | Description |
+|------|--------------|
+| **train.txt** | Training SMILES (ZINC subset, tokenized) |
+| **test.txt** | Testing SMILES |
+| **vocab.txt** | List of token vocabulary (e.g., atoms, bonds, brackets) |
+| **zinc_clean.smi** | Cleaned dataset generated via RDKit preprocessing |
 
 ---
 
@@ -45,3 +53,15 @@ The model efficiently generates **novel, valid, and drug-like molecules** on **c
 - **Interface:** Gradio / Flask
 - **Deployment:** Google Colab, Hugging Face Spaces, Docker
 
+----
+
+## Performance Results
+
+| Metric | ORGAN | ORGAN-DPP | Improvement |
+|:--------|:------:|:----------:|:-------------:|
+| **Validity** | 0.89 | 0.94 | **+5.6%** |
+| **Diversity** | 0.75 | 0.88 | **+17.3%** |
+| **Uniqueness** | 0.82 | 0.91 | **+11%** |
+| **QED** | 0.52 | 0.61 | **+17%** |
+| **Training Time** | 10.5 h | 8.2 h | **−22%** |
+| **Memory Usage** | 14.8 GB | 5.1 GB | **−85%** |
