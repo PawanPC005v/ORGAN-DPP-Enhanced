@@ -1,0 +1,20 @@
+# Core ML Libraries
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Data & Scientific
+numpy>=1.23.0
+pandas>=1.5.0
+tqdm>=4.65.0
+scikit-learn>=1.2.0
+
+# Chemistry Toolkit
+rdkit-pypi>=2022.9.5
+
+# Web App / UI
+gradio>=4.0.0
+
+# Utilities
+matplotlib>=3.7.0
+argparse
